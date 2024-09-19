@@ -1,5 +1,6 @@
 param(
-    [string]$lng = "en-AU"
+    [string]$lng = "en-GB"
+    [int]$location = 242 #https://docs.microsoft.com/en-au/windows/desktop/Intl/table-of-geographical-locations
 )
 
 if (-not [System.Environment]::Is64BitProcess)
@@ -33,8 +34,6 @@ Start-Transcript -Path "C:\Windows\Temp\SetLanguage.log" | Out-Null
 
 #$lng = "en-AU"
 $outFile = "C:\Windows\Temp\Lng.xml"
-#https://docs.microsoft.com/en-au/windows/desktop/Intl/table-of-geographical-locations
-$location = 12
 
 Write-Host "Set language: $lng"
 Write-Host "Language file: $outFile"
