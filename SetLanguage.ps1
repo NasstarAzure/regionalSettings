@@ -1,5 +1,5 @@
 param(
-    [string]$lng = "en-GB"
+    [string]$lng = "en-GB",
     [int]$location = 242 #https://docs.microsoft.com/en-au/windows/desktop/Intl/table-of-geographical-locations
 )
 
